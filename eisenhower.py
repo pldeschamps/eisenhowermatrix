@@ -6,8 +6,8 @@
 __author__ = "Pierre-Louis Deschamps https://github.com/pldeschamps"
 __license__ = "CC BY-SA https://creativecommons.org"
 
-from GUILayout import MVC
-from LogicLayout import Tasks
+from GUILayer import MVC
+from LogicLayer import Tasks
 
 main = MVC.Controller()
 main.run()

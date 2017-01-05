@@ -4,8 +4,8 @@ __license__ = "CC BY-SA https://creativecommons.org"
 import tkinter as tk
 from tkinter import font as font
 
-from GUILayout import Texts, DialogBox
-from LogicLayout import Tasks
+from GUILayer import Texts, DialogBox
+from LogicLayer import Tasks
 
 
 class Model:

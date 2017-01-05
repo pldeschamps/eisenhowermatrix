@@ -3,7 +3,7 @@ __license__ = "CC BY-SA https://creativecommons.org"
 
 import tkinter as tk
 
-from GUILayout import Texts
+from GUILayer import Texts
 
 
 class DialogBox(tk.Toplevel):

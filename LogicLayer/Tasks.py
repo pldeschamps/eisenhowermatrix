@@ -1,7 +1,7 @@
 __author__ = "Pierre-Louis Deschamps https://github.com/pldeschamps"
 __license__ = "CC BY-SA https://creativecommons.org"
 
-from DataLayout import Data
+from DataLayer import Data
 
 
 classificationColor = (("#80C0FF", "#C0FF80"), ("#FFFF80", "#FF4040"))
