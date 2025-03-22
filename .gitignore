@@ -1,0 +1,7 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/eisenhowermatrix/CopilotIndices
+/.vs/eisenhowermatrix/copilot-chat/d2731bec/sessions
+/.vs/eisenhowermatrix/FileContentIndex
