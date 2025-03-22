@@ -63,6 +63,3 @@ class DialogBox(tk.Toplevel):
         pass #to be overloaded
 
 
-
-
-

@@ -135,7 +135,7 @@ class FrameTask(tk.Frame):
         # self.doneCheckButton.pack(side=tk.LEFT, padx=1, pady=1)
         self.checkButtonTask = CheckButtonTask(self, task, self.cget('bg'))
         self.labelDueDate = tk.Label(self, text=task._dueDate, bg=self.cget('bg'))
-        self.labelDueDate.pack(side=tk.LEFT, padx=1, pady=1)
+        self.labelDueDate.pack(side=tk.RIGHT, padx=1, pady=1)
         def button3(event):
             PopUpMenu(self.view, self, event, self.task._id, self.tasks)
             #return self.popupmenu(event)
@@ -176,7 +176,14 @@ class PopUpMenu(tk.Menu):
         self._frameTask.destroy()
 
     def editTask(self):
-        pass
+        for task in self._tasks:
+            if task._id == self._task_id:
+                et = DialogBoxEditTask(self.view._tkroot, Texts.editTask, task)
+                if et.result:
+                    self.updateFrameTask(task)
+                    task.updateInDB()
+                    self._frameTask.destroy() 
+                    self.view.displayTask(task)
 
     def changeUrgency(self):
         for task in self._tasks:
@@ -260,6 +267,40 @@ class DialogBoxNewTask(DialogBox.DialogBox):
     def apply(self):
         self.result = Tasks.Task(0, self._tasks, self.taskTask.get(), self.taskDueDate.get(), self.urgent.get(), self.important.get())
 
+class DialogBoxEditTask(DialogBox.DialogBox):
+    def __init__(self, root, title, task):
+        self._task = task
+        DialogBox.DialogBox.__init__(self, root, title, offx=0, offy=0)
+
+    def packing(self, master):
+        frameTaskDueDate = tk.Frame(master)
+        tk.Label(frameTaskDueDate, text="Task :").pack(side=tk.LEFT)
+        self.taskTask = tk.Entry(frameTaskDueDate)
+        self.taskTask.insert(0, self._task._name)
+        self.taskTask.pack(side=tk.LEFT)
+        tk.Label(frameTaskDueDate, text="Due Date :").pack(side=tk.LEFT)
+        self.taskDueDate = tk.Entry(frameTaskDueDate)
+        self.taskDueDate.insert(0, self._task._dueDate)
+        self.taskDueDate.pack(side=tk.LEFT)
+        frameTaskDueDate.pack(side=tk.TOP)
+        frameUrgencyImportance = tk.Frame(master)
+        self.urgent = tk.IntVar(value=self._task._urgent)
+        self.urgentCheckButton = tk.Checkbutton(frameUrgencyImportance, text=Texts.urgency[1],
+                                                variable=self.urgent)
+        self.urgentCheckButton.pack(side=tk.LEFT)
+        self.important = tk.IntVar(value=self._task._important)
+        self.importanceCheckButton = tk.Checkbutton(frameUrgencyImportance, text=Texts.importance[1],
+                                                    variable=self.important)
+        self.importanceCheckButton.pack(side=tk.LEFT)
+        frameUrgencyImportance.pack(side=tk.TOP)
+        return self.taskTask
+
+    def apply(self):
+        self._task._name = self.taskTask.get()
+        self._task._dueDate = self.taskDueDate.get()
+        self._task._urgent = self.urgent.get()
+        self._task._important = self.important.get()
+        self.result = self._task
 
 class Controller:
     def __init__(self):
