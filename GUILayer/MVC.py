@@ -6,7 +6,8 @@ from tkinter import font as font
 
 from GUILayer import Texts, DialogBox
 from LogicLayer import Tasks
-
+from tkcalendar import DateEntry
+# import datetime
 
 class Model:
     def __init__(self):
@@ -19,7 +20,7 @@ class View:
         self._tkroot = tkroot
         self._model = model
         tkroot.title(Texts.applicationTitle)
-        tkroot.geometry("440x634")   # (210x2 + 2x10) x (297x2 + 2x10)
+        tkroot.geometry("1000x1000")   # (210x2 + 2x10) x (297x2 + 2x10)
 
         # Menu
         self.mainMenu = tk.Menu(tkroot, tearoff=False)
@@ -165,8 +166,18 @@ class PopUpMenu(tk.Menu):
         self._tasks = tasks
         self.add_command(label=Texts.deleteTask, command=self.deleteTask)
         self.add_command(label=Texts.editTask, command=self.editTask)
-        self.add_command(label=Texts.changeUrgency, command=self.changeUrgency)
-        self.add_command(label=Texts.changeImportance, command=self.changeImportance)
+        self.urgency_var = tk.IntVar()
+        for task in self._tasks:
+            if task._id == self._task_id:
+                self.urgency_var.set(task._urgent)
+        self.add_checkbutton(label=Texts.urgency[1], variable=self.urgency_var, command=self.toggleUrgency)
+        self.importance_var = tk.IntVar()
+        for task in self._tasks:
+            if task._id == self._task_id:
+                self.importance_var.set(task._important)
+        self.add_checkbutton(label=Texts.importance[1], variable=self.importance_var, command=self.toggleImportance)
+        # self.add_command(label=Texts.changeUrgency, command=self.changeUrgency)
+        # self.add_command(label=Texts.changeImportance, command=self.changeImportance)
         self.post(event.x_root, event.y_root)
 
     def deleteTask(self):
@@ -184,6 +195,18 @@ class PopUpMenu(tk.Menu):
                     task.updateInDB()
                     self._frameTask.destroy() 
                     self.view.displayTask(task)
+    def toggleUrgency(self):
+        for task in self._tasks:
+            if task._id == self._task_id:
+                task._urgent = self.urgency_var.get()
+                task.updateInDB()
+                self.updateFrameTask(task)
+    def toggleImportance(self):
+        for task in self._tasks:
+            if task._id == self._task_id:
+                task._important = self.importance_var.get()
+                task.updateInDB()
+                self.updateFrameTask(task)
 
     def changeUrgency(self):
         for task in self._tasks:
@@ -240,14 +263,14 @@ class DialogBoxNewTask(DialogBox.DialogBox):
         DialogBox.DialogBox.__init__(self, root, title, offx=0, offy=0)
 
     def packing(self, master):
-        frameTaskDueDate = tk.Frame(master)
-        tk.Label(frameTaskDueDate, text="Task :").pack(side=tk.LEFT)
-        self.taskTask = tk.Entry(frameTaskDueDate)
+        frameTask = tk.Frame(master)
+        tk.Label(frameTask, text="Task :").pack(side=tk.LEFT)
+        self.taskTask = tk.Entry(frameTask)
         self.taskTask.pack(side=tk.LEFT)
-        tk.Label(frameTaskDueDate, text="Due Date :").pack(side=tk.LEFT)
-        self.taskDueDate = tk.Entry(frameTaskDueDate)
+        tk.Label(frameTask, text="Due Date :").pack(side=tk.LEFT)
+        self.taskDueDate = DateEntry(frameTask, date_pattern='dd/mm/yyyy')
         self.taskDueDate.pack(side=tk.LEFT)
-        frameTaskDueDate.pack(side=tk.TOP)
+        frameTask.pack(side=tk.TOP)
         frameUrgencyImportance = tk.Frame(master)
         self.urgent = tk.IntVar()
         self.urgentCheckButton = tk.Checkbutton(frameUrgencyImportance, text=Texts.urgency[1],
@@ -273,16 +296,20 @@ class DialogBoxEditTask(DialogBox.DialogBox):
         DialogBox.DialogBox.__init__(self, root, title, offx=0, offy=0)
 
     def packing(self, master):
-        frameTaskDueDate = tk.Frame(master)
-        tk.Label(frameTaskDueDate, text="Task :").pack(side=tk.LEFT)
-        self.taskTask = tk.Entry(frameTaskDueDate)
+        frameTask = tk.Frame(master)
+        tk.Label(frameTask, text="Task :").pack(side=tk.LEFT)
+        self.taskTask = tk.Entry(frameTask)
         self.taskTask.insert(0, self._task._name)
         self.taskTask.pack(side=tk.LEFT)
-        tk.Label(frameTaskDueDate, text="Due Date :").pack(side=tk.LEFT)
-        self.taskDueDate = tk.Entry(frameTaskDueDate)
-        self.taskDueDate.insert(0, self._task._dueDate)
+        tk.Label(frameTask, text="Due Date :").pack(side=tk.LEFT)
+        self.taskDueDate = DateEntry(frameTask, date_pattern='dd/mm/yyyy')
+        if self._task._dueDate:
+            self.taskDueDate.set_date(self._task._dueDate)
+        # else:
+        #     current_date = datetime.datetime.now().strftime('%d/%m/%Y')
+        #     self.taskDueDate.set_date(current_date)
         self.taskDueDate.pack(side=tk.LEFT)
-        frameTaskDueDate.pack(side=tk.TOP)
+        frameTask.pack(side=tk.TOP)
         frameUrgencyImportance = tk.Frame(master)
         self.urgent = tk.IntVar(value=self._task._urgent)
         self.urgentCheckButton = tk.Checkbutton(frameUrgencyImportance, text=Texts.urgency[1],

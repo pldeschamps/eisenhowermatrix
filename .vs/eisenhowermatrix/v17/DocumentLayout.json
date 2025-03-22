@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|solutionrelative:GUILayer\\MVC.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\Texts.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|solutionrelative:GUILayer\\Texts.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\DialogBox.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|solutionrelative:GUILayer\\DialogBox.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -20,8 +33,43 @@
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Texts.py",
+              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\Texts.py",
+              "RelativeDocumentMoniker": "GUILayer\\Texts.py",
+              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\Texts.py",
+              "RelativeToolTip": "GUILayer\\Texts.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-22T17:42:36.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MVC.py",
+              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py",
+              "RelativeDocumentMoniker": "GUILayer\\MVC.py",
+              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py",
+              "RelativeToolTip": "GUILayer\\MVC.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-22T17:10:49.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DialogBox.py",
+              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\DialogBox.py",
+              "RelativeDocumentMoniker": "GUILayer\\DialogBox.py",
+              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\DialogBox.py",
+              "RelativeToolTip": "GUILayer\\DialogBox.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-22T17:10:16.618Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\eisenhower.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:eisenhower.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|solutionrelative:GUILayer\\MVC.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GUILayer\\MVC.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\Texts.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|solutionrelative:GUILayer\\Texts.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\LogicLayer\\Tasks.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LogicLayer\\Tasks.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\Texts.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:GUILayer\\Texts.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\DialogBox.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1FC9B720-60CB-41F8-9E7A-7C57C0702671}|eisenhowermatrix.pyproj|solutionrelative:GUILayer\\DialogBox.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,20 +34,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tasks.py",
-              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\LogicLayer\\Tasks.py",
-              "RelativeDocumentMoniker": "LogicLayer\\Tasks.py",
-              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\LogicLayer\\Tasks.py",
-              "RelativeToolTip": "LogicLayer\\Tasks.py",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADQAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-03-22T13:46:31.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Texts.py",
               "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\Texts.py",
               "RelativeDocumentMoniker": "GUILayer\\Texts.py",
@@ -59,33 +42,33 @@
               "RelativeToolTip": "GUILayer\\Texts.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-03-22T13:05:53.791Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MVC.py",
-              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py",
-              "RelativeDocumentMoniker": "GUILayer\\MVC.py",
-              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py",
-              "RelativeToolTip": "GUILayer\\MVC.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-03-22T11:33:34.192Z",
+              "WhenOpened": "2025-03-22T17:42:36.333Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "eisenhower.py",
-              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\eisenhower.py",
-              "RelativeDocumentMoniker": "eisenhower.py",
-              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\eisenhower.py",
-              "RelativeToolTip": "eisenhower.py",
+              "Title": "MVC.py",
+              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py",
+              "RelativeDocumentMoniker": "GUILayer\\MVC.py",
+              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\MVC.py",
+              "RelativeToolTip": "GUILayer\\MVC.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-03-22T17:10:49.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DialogBox.py",
+              "DocumentMoniker": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\DialogBox.py",
+              "RelativeDocumentMoniker": "GUILayer\\DialogBox.py",
+              "ToolTip": "C:\\Users\\jddde\\source\\repos\\pldeschamps\\eisenhowermatrix\\GUILayer\\DialogBox.py",
+              "RelativeToolTip": "GUILayer\\DialogBox.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-03-22T11:31:39.539Z",
+              "WhenOpened": "2025-03-22T17:10:16.618Z",
               "EditorCaption": ""
             }
           ]
